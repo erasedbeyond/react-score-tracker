@@ -1,0 +1,114 @@
+html,body{
+    height: 100%;
+}
+#root{
+    --color-one:rgb(118, 156, 203);
+    --color-two: rgb(203, 131, 118);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App{
+    position: relative;
+    font-family: sans-serif;
+    color: var(--color-one)
+}
+
+.enter-players, .score-board{
+    min-width: 400px;
+    min-height: 520px;
+    width: 40vw;
+    height: 80vh;
+    padding: 20px;
+    margin:40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px var(--color-one);
+    background-color: white;
+
+}
+
+@media only screen and (max-height: 600px) {
+    .enter-players, .score-board{
+      zoom:80%
+    }
+  }
+  
+.enter-players h2, .score-board h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.game-form,.scoreboard{
+    position: relative;
+    padding: 20px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+::placeholder {
+    color: var(--color-two);
+    opacity: .7
+}
+
+.btn{
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color:var(--color-one) ;
+    background-color: white;
+    border: 3px solid var(--color-one);
+
+}
+
+.btn:hover{
+    border-color:var(--color-two);
+    color:var(--color-two);
+    cursor: pointer;
+}
+
+.color-two{
+    color:var(--color-two);
+}
+ 
+
+.hide{
+    visibility: hidden;
+    opacity:0;
+    width: 0;
+    transition:.6s all;
+}
+
+.show{
+    visibility: visible;
+    opacity:1;
+    width: 320px;
+    transition:.6s all;
+}
+
+/* scrollbar setting */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgb(41, 80, 126); 
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:  rgb(49, 97, 152); 
+    cursor: pointer;
+}

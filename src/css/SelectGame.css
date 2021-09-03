@@ -1,0 +1,89 @@
+.select-game{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:.5vh;
+    right: 0;
+    height: 99vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-one);
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px gray;
+}
+
+.toggle-select-game{
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-select-game{
+    transition:.6s all;
+}
+
+.toggle-select-game h2{
+    color: white;
+    background-color: var(--color-one);
+    border-bottom:2px solid rgba(255, 255, 255, 0.775);
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    height: 50px;
+    width: 310px;
+    padding: 20px 0 0 0;
+}
+
+.all-sports{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-sports>div{
+    overflow-y: auto;
+    padding-top: 60px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    border-radius: 20px;
+}
+
+.sport-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 280px;
+    color: var(--color-one);
+    border: 2px solid white;
+    margin: 10px;
+}
+
+.sport-container:hover{
+    cursor: pointer;
+}
+
+.show-detail-btn{
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border:1px solid var(--color-one);
+    transform: rotate(270deg);
+    left: -75px;
+    top:50vh;
+    border-radius: 10px 10px 0px 0;
+    box-shadow: 0 0 2px 2px var(--color-one);
+}
+
+.show-detail-btn:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, var(--color-one), var(--color-two)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    transition: .6s all;
+    border-color: white;
+}
